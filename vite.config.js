@@ -7,10 +7,6 @@ export default defineConfig({
         outDir: 'dist',
         rollupOptions: {
             input: {
-                // main: resolve(__dirname, 'pages/index.html'),
-                // main2: resolve(__dirname, 'pages/index2.html'),
-                // about: resolve(__dirname, 'pages/about.html'),
-                // about2: resolve(__dirname, 'pages/about2.html'),
                 pages: resolve(__dirname, 'index.html'),
                 home: resolve(__dirname, 'pages/home.html'),
                 homev2: resolve(__dirname, 'pages/homev2.html'),
