@@ -1,0 +1,89 @@
+@use '../variables' as *;
+
+.btn {
+    &-secondary {
+        padding: 8px 40px;
+        border: 2px solid $black;
+        border-radius: 24px;
+        background: transparent;
+        color: $black;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+
+        &.small {
+            padding: 8px 40px;
+            border-radius: 24px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &.large {
+            padding: 16px 56px;
+            border-radius: 56px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+        &:hover {
+            background: $black;
+            color: $white;
+        }
+
+        &.dark {
+            border-color: $dblue;
+            color: $dblue;
+
+            &:hover {
+                background: $dblue;
+                color: $white;
+            }
+        }
+
+        &.light {
+            border-color: $white;
+            background: $white;
+            color: $dblue;
+
+            &:hover {
+                background: $dblue;
+                color: $white;
+            }
+        }
+
+        &.b-light {
+            border-color: $white;
+            background: transparent;
+            color: $white;
+
+            &:hover {
+                background: $white;
+                color: $dblue;
+            }
+        }
+
+        &.b-dark {
+            border-color: $dblue;
+            background: $dblue;
+            color: $white;
+
+            &:hover {
+                background: $white;
+                color: $dblue;
+            }
+        }
+
+        &.green {
+            border-color: $green;
+            background: $green;
+            color: $dblue;
+
+            &:hover {
+                background: $dblue;
+                color: $white;
+            }
+        }
+    }
+}

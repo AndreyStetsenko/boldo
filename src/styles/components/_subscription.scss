@@ -1,0 +1,70 @@
+@use '../variables' as *;
+
+.subscription {
+    margin-top: 124px;
+
+    &-card {
+        padding: 72px;
+        background: $dblue;
+        border-radius: 12px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+
+        @media (max-width: 768px) {
+            padding: 64px 15px;
+        }
+
+        &::after {
+            content: '';
+            width: 1293px;
+            height: 1293px;
+            display: block;
+            background: #1C3D5B;
+            border-radius: 100%;
+            position: absolute;
+            top: calc(-1293px + 60%);
+            right: calc(-1293px + 60%);
+            z-index: -1;
+        }
+
+        .content {
+            max-width: 716px;
+            margin: 0 auto;
+
+            .title {
+                margin-bottom: 48px;
+            }
+
+            .form {
+                display: flex;
+                flex-direction: row;
+                gap: 24px;
+
+                @media (max-width: 768px) {
+                    flex-direction: column;
+                }
+
+                .btn {
+                    text-wrap: nowrap;
+                }
+
+                input {
+                    padding: 12px 32px;
+                    background: $white;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 32px;
+                    border-radius: 240px;
+                    border: 1px solid $white;
+
+                    &:active,
+                    &:focus {
+                        box-shadow: none;
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}

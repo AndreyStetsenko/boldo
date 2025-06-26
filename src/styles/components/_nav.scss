@@ -1,0 +1,40 @@
+@use '../variables' as *;
+
+.navbar {
+    .navbar-nav {
+        gap: 40px;
+
+        .nav {
+            &-link {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 28px;
+                color: $dblue;
+            }
+        }
+    }
+
+    &.navbar-dark {
+        .nav {
+            &-link {
+                color: $white;
+            }
+        }
+    }
+
+    .navbar-collapse {
+        @media (max-width: 768px) {
+            .navbar-nav {
+                padding-top: 25px;
+                gap: 25px;
+                text-align: center;
+
+                .nav-link {
+                    padding: 8px 0;
+                    display: block;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}

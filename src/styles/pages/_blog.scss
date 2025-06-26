@@ -1,0 +1,46 @@
+@use '../variables' as *;
+
+.blog-hero {
+    padding: 56px 0 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+        padding-top: 32px;
+    }
+
+    &--container {
+        padding-bottom: 72px;
+        border-bottom: 1px solid $dblue;
+    }
+
+    &--content {
+        height: 100%;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .title {
+            margin: 12px 0 20px;
+        }
+    }
+
+    &--head {
+        margin-top: 45px;
+        padding: 27.5px 0;
+    }
+
+    &--img {
+        margin-top: 40px;
+        max-width: 550px;
+        border-radius: 24px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

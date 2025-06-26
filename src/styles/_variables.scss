@@ -1,0 +1,23 @@
+// Основные цвета
+$dblue: #0A2640;
+$green: #65E4A3;
+$white: #ffffff;
+$lgray: #f1f1f1;
+$gray: #777777;
+$black: #000000;
+
+$theme-colors: (
+    "primary": $dblue,
+    "secondary": $gray,
+    "success": $green,
+    "light": $white,
+    "dark": $black
+);
+
+// Шрифты
+$font-family-base: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+$font-size-base: 20px;
+$line-height-base: 32px;
+
+$spacer: 1rem;
+$border-radius: 0.5rem;

@@ -1,0 +1,24 @@
+{
+    "name": "boldo",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "devDependencies": {
+        "sass-embedded": "^1.89.2",
+        "vite": "^7.0.0"
+    },
+    "dependencies": {
+        "@popperjs/core": "^2.11.8",
+        "bootstrap": "^5.3.7",
+        "swiper": "^11.2.8"
+    }
+}

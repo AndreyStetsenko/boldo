@@ -1,0 +1,39 @@
+@use '../variables' as *;
+@use './user-mini-card' as *;
+@use './category-card-item' as *;
+
+.news-card {
+    max-width: 300px;
+
+    @media (max-width: 768px) {
+        max-width: 100%;
+        margin-bottom: 36px;
+    }
+    
+    .img {
+        width: 100%;
+        height: 210px;
+        margin-bottom: 24px;
+        border-radius: 12px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .description {
+        margin: 12px 0 0;
+
+        @media (max-width: 768px) {
+            margin-top: 18px;
+            font-size: 24px;
+        }
+    }
+
+    .user-mini-card {
+        margin-top: 20px;
+    }
+}
