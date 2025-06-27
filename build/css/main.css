@@ -12010,7 +12010,7 @@ body {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-15px); /* поднимем на 15px; подкорректируйте по желанию */
+    transform: translateY(-15px);
   }
 }
 .home-hero {
