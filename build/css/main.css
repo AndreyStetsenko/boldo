@@ -11855,6 +11855,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  position: relative;
+  z-index: 1;
+}
+
 .container {
   max-width: 1200px;
 }
@@ -12929,6 +12934,10 @@ body {
     display: block;
     font-size: 24px;
   }
+}
+.navbar .lang .dropdown-toggle {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .subscription {
